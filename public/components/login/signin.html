@@ -1,0 +1,32 @@
+<md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+            <h2>Demo App</h2>
+            </div>
+        </md-toolbar>
+    </md-content>
+<div class="container" style="margin-top:10px;">
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+`       <h4 class="text-center text-primary">Login Page</h4>
+      <form name="signInForm" ng-submit="signin()" novalidate>
+
+               <md-input-container layout="row">
+                   <label>User Name</label>
+               <input ng-model="user.userName" type="text"required>
+             </md-input-container>
+
+               <md-input-container layout="row">
+               <input ng-model="user.password" type="password" md-focus-on-select placeholder="Password" required>
+             </md-input-container>
+               <md-button ng-disabled="signInForm.$invalid" class="md-raised md-primary" type="submit">Login
+               </md-button>
+              <md-button  class="regbtn"><a class="decorator-none" ui-sref='sign_up'>Register</a>
+               </md-button>
+       </form>
+
+      </div>
+
+</div>
+</div>

@@ -1,0 +1,23 @@
+<md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+            <h2>Demo App</h2>
+            <span flex></span>
+            <a href="" ng-click="regSuccessMsg=null" style="margin-right:5px;">
+            <md-icon  md-svg-icon="/images/user.svg"></md-icon>
+          </a>
+          <small style="margin-right:7px;">{{user.displayName}}</small>
+          <a title="Table" href="/home/table" style="margin-right:7px;">
+              <md-icon  md-svg-icon="/images/table.svg"></md-icon>
+          </a>
+          <a title="Chart" href="/home/chart"style="margin-right:7px;">
+              <md-icon  md-svg-icon="/images/charts.svg"></md-icon>
+          </a>
+          <a title="Logout" href="" ng-click="logout()">
+              <md-icon  md-svg-icon="/images/logout.svg"></md-icon>
+          </a>
+            </div>
+        </md-toolbar>
+    </md-content>
+
+<div ui-view></div>

@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <th colspan="7" class="text-primary"><h5>Registrations Info</h5></th>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th>Registration No.</th>
+                  <th>Full Name</th>
+                  <th>Mobile</th>
+                  <th>Email</th>
+                  <th>Id</th>
+                  <th>Type</th>
+                  <th>No. of Tickets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="data in registrations">
+                  <th><a style="outline:none;" href="" ng-click="previewRegDetails($event, data)">{{data.regId}}</a></th>
+                  <td>{{data.fullName}}</td>
+                  <td>{{data.mobile}}</td>
+                  <td>{{data.email}}</td>
+                    <td><a href="{{data.idUrl}}" target="_blank">{{data.idUrl}}</a></td>
+                  <td>{{data.type}}</td>
+                  <td>{{data.tickets}}</td>
+                  </tr>
+                <tr ng-show="registrations.length == 0">
+                  <th colspan="7" class="text-info">No Record Found</th>
+                  </tr>
+              </tbody>
+            </table>
+
+</div>
+</div>
+</div>
+                

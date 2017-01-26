@@ -1,0 +1,25 @@
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+                    <h4 class="text-center text-primary">Total Registrations</h4>
+            <c3chart bindto-id="pie-plot1-chart">
+                <chart-column column-id="Self"
+                  column-values="{{chartData.self}}"
+                  column-type="pie"/>
+                <chart-column column-id="Corporate"
+                  column-values="{{chartData.corporate}}"
+                  column-type="pie"/>
+                <chart-column column-id="Group"
+                  column-values="{{chartData.group}}"
+                  column-type="pie"/> 
+                <chart-column column-id="Others"
+                  column-values="{{chartData.others}}"
+                  column-type="pie"/>
+                <chart-pie expand="true"/>
+            </c3chart>
+        </div>
+        
+    </div>
+</div>

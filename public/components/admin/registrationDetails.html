@@ -1,0 +1,47 @@
+<md-dialog aria-label="Preview">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Preview</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          &#x2716;
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+          
+          
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Registration No.</th>
+                  <th>Full Name</th>
+                  <th>Mobile</th>
+                  <th>Email</th>
+                  <th>Id</th>
+                  <th>Type</th>
+                  <th>No. of Tickets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{regDetails.regId}}</td>
+                  <td>{{regDetails.fullName}}</td>
+                  <td>{{regDetails.mobile}}</td>
+                  <td>{{regDetails.email}}</td>
+                  <td><img style="display:block;" width="100%" height="10%" src="{{regDetails.idUrl}}"></td>
+                  <td>{{regDetails.type}}</td>
+                  <td>{{regDetails.tickets}}</td>
+                  </tr>
+              </tbody>
+            </table>
+
+            
+          
+      </div>
+    </md-dialog-content>
+
+    
+</md-dialog>
