@@ -1,0 +1,2 @@
+1. values, constants, factories, services, providers all are singletons
+2
