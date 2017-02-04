@@ -53,7 +53,7 @@ app.use(function(req, res, next){
 app.use(session({
     secret: 'this is a secret',
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store: new MongoStore({ mongooseConnection: mongoose.connection })
 }));
 
